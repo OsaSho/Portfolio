@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
+    <meta property="og:url" content="http://portfolio-pro.s3-website-ap-northeast-1.amazonaws.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="ポートフォリオ" />
+    <meta property="og:description" content="長田庄一郎のポートフォリオページです。" />
+    <meta property="og:site_name" content="osadaPortfolio" />
+    <meta property="og:image" content="http://portfolio-pro.s3-website-ap-northeast-1.amazonaws.com/image/portfolioImg.png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/8778ba7201.js" crossorigin="anonymous"></script>
+    <script src="js/skill.bars.jquery.js"></script>
+    <script src="js/foldscroll.js"></script>
+    <script src="js/quotes.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/helper.css">
+    <link rel="stylesheet" href="css/element.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/skill.css">
+    <link rel="stylesheet" href="css/foldScroll.css">
+    <link rel="stylesheet" href="css/loading.css">
+    <link rel="stylesheet" href="css/top.css">
+  </head>
+  <body>
+    <header>
+      <div class="header-title text-14">
+        <img class="logo" src="/image/logoSample.png">
+        <a cclass="text-12" href="/">PORTFOLIO</a>
+      </div>
+      <nav class="pc-nav">
+        <ul class="pc-nav-items">
+          <li><a href="#top">トップ</a></li>
+          <li><a href="#about-this-page">このサイトについて</a></li>
+          <li><a href="#about-me">自己紹介</a></li>
+          <li><a href="#works">実績</a></li>
+          <li><a href="#skill-set">スキル</a></li>
+          <li><a href="#profile">プロフィール</a></li>
+          <li><a href="#contact">連絡先</a></li>
+        </ul>
+      </nav>
+      <div class="openbtn1"><span></span><span></span><span></span></div>
+      <nav id="g-nav">
+        <div id="g-nav-list"><!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
+          <ul>
+            <li><a href="#top">トップ</a></li>
+            <li><a href="#about-this-page">このサイトについて</a></li>
+            <li><a href="#about-me">自己紹介</a></li>
+            <li><a href="#works">実績</a></li>
+            <li><a href="#skill-set">スキル</a></li>
+            <li><a href="#profile">プロフィール</a></li>
+            <li><a href="#contact">連絡先</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- TOPデザイン1 -->
+      <div class="hello-parent">
+        <svg class="hello-word" width="365" height="365" viewBox="0 0 365 365">
+          <g id="H-letter">
+          <line class="H-left-stroke" x1="17" y1="0" x2="17" y2="124" stroke="#000" fill="none" stroke-width="34" />
+          <line class="H-mid-stroke" x1="33" y1="62" x2="68" y2="62" stroke="#000" fill="none" stroke-width="34" />
+          <line class="H-right-stroke" x1="84" y1="0" x2="84" y2="124" stroke="#000" fill="none" stroke-width="34" />
+          </g>
+          <g id="E-letter">
+            <line class="E-left-stroke" x1="138" y1="0" x2="138" y2="124" stroke="#000" fill="none" stroke-width="34" />
+            <line class="E-top-stroke" x1="154" y1="17" x2="201" y2="17" stroke="#000" fill="none" stroke-width="34" />
+            <line class="E-mid-stroke" x1="154" y1="62" x2="196" y2="62" stroke="#000" fill="none" stroke-width="34" />
+            <line class="E-bottom-stroke" x1="154" y1="107" x2="201" y2="107" stroke="#000" fill="none" stroke-width="34" />
+          </g>
+          <g id="L-one-letter">
+            <line class="L-one-long-stroke" x1="17" y1="153" x2="17" y2="277" stroke="#000" fill="none" stroke-width="34" />
+            <line class="L-one-short-stroke" x1="33" y1="260" x2="77" y2="260" stroke="#000" fill="none" stroke-width="34" />
+          </g>
+          <g id="L-two-letter">
+            <line class="L-two-long-stroke" x1="104" y1="153" x2="104" y2="277" stroke="#000" fill="none" stroke-width="34" />
+            <line class="L-two-short-stroke" x1="120" y1="260" x2="164" y2="260" stroke="#000" fill="none" stroke-width="34" />
+          </g>
+          <g id="O-letter">
+            <circle class="O-stroke" cx="231" cy="215" r="48" stroke="#000" fill="none" stroke-width="31" />
+          </g>
+          <g id="red-dot">
+            <line x1="325" y1="260" x2="325" y2="260" stroke="#FF5851" class="red-dot" />
+          </g>
+        </svg>
+      </div>
+      </div>
+      <!---->
+      <div class="top-content-wrapper" id="top">
+        <img class="top-image" src="/image/top.webp">
+        <div class="top-title text-20 bold">
+          Shoichiro Osada
+        </div>
+        <div class="top-content text-10">
+          This is osada portfolio
+        </div>
+        <a class="scroll" href="#about-this-page">Scroll</a>
+      </div>
+      <div class="content-wrapper back-image" id="about-this-page">
+        <div class="content-container">
+          <div class="max-width-default p-md">
+            <div class="text-center m-md text-16 bold">
+              ABOUT THIS PAGE
+            </div>
+            <dev>
+              はじめまして。こちらはエンジニア『長田』のポートフォリオページです。<br>
+              これまでの作成した成果物や得た知識を知って頂きたいと思い作成致しました。<br>
+              お時間のある限りゆっくりとご覧ください。
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content-wrapper" id="about-me">
+        <div class="content-container">
+          <div class="w-80">
+            <div class="text-center m-md text-16 bold">
+              ABOUT ME
+            </div>
+            <div class="display-flex justify-content-center">
+              <img class="about-me-img m-sm" src="/image/me.jpeg">
+              <div class="about-me-content m-sm">
+                東京都目黒区出身のエンジニア。<br>
+                高校3年生にプロボクサーライセンスを取得。プロボクサーの側、飛び込みの営業を行い生計を立てる。<br>
+                プロボクサー引退後は、プロテインブランドの起業を経験。<br>
+                その後独学でiOSアプリ開発を行い、その経験を生かし2020年にアプリケーション受託開発をメインとするITベンチャー会社にてプログラマーとしてのキャリアをスタート。<br>
+                フロント/バックエンド、DB,サーバーサイド、iOS,Androidと幅広く開発経験を積み、現在はフルスタックエンジニアとして活躍中。
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content-wrapper back-image" id="works">
+        <div class="content-container">
+          <div class="w-80">
+            <div class="text-center m-md text-16 bold">
+              WORKS
+            </div>
+            <div class="work-wrapper display-flex">
+              <div class="work-content text-center m-md" id="work-01">
+                <img class="works-img" src="image/golfApp01.jpg">
+                <div class="works-title">
+                  ゴルフ免許証アプリ
+                </div>
+              </div>
+              <div class="work-content text-center m-md" id="work-02">
+                <img class="works-img" src="image/doyoApp01.png">
+                <div class="works-title">
+                  童謡こども歌コンクールアプリ
+                </div>
+              </div>
+              <div class="work-content text-center m-md" id="work-03">
+                <img class="works-img" src="image/chatApp01.png">
+                <div class="works-title">
+                  サーバーレスチャットサンプルアプリ
+                </div>
+              </div>
+              <div class="work-content text-center m-md" id="work-04">
+                <img class="works-img" src="image/portfolioImg.png">
+                <div class="works-title">
+                  PortFolioサイト
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content-wrapper" id="skill-set">
+        <div class="content-container">
+          <div class="w-80">
+            <div class="text-center m-md text-16 bold">
+              SKILL SET
+            </div>
+            <div class="skill-set-wrapper display-flex">
+              <div class="skill-bar-container">
+                <div class="text-center">
+                  Front-end
+                </div>
+                <div class="skillbar" data-percent="90">
+                  <span class="skillbar-title" style="background: #d35400;">HTML</span>
+                  <p class="skillbar-bar" style="background: #e67e22;"></p>
+                  <span class="skill-bar-percent"></span>
+                </div>
+                <div class="skillbar" data-percent="90">
+                  <span class="skillbar-title" style="background: #2980b9;">CSS</span>
+                  <p class="skillbar-bar" style="background: #3498db;"></p>
+                  <span class="skill-bar-percent"></span>
+                </div>
+                <div class="skillbar" data-percent="80">
+                  <span class="skillbar-title" style="background: #27a32d;">Nuxt.js</span>
+                  <p class="skillbar-bar" style="background: #3cd15d;"></p>
+                  <span class="skill-bar-percent"></span>
+                </div>
+                <div class="skillbar" data-percent="70">
+                  <span class="skillbar-title" style="background: #46465e;">jQuery</span>
+                  <p class="skillbar-bar" style="background: #5a68a5;"></p>
+                  <span class="skill-bar-percent"></span>
+                </div>
+              </div>
+              <div class="skill-bar-container">
+                <div class="text-center">
+                  Back-end
+                </div>
+                <div class="skillbar" data-percent="80">
+                  <span class="skillbar-title" style="background: #d35400;">PHP</span>
+                  <p class="skillbar-bar" style="background: #e67e22;"></p>
+                  <span class="skill-bar-percent"></span>
+                </div>
+                <div class="skillbar" data-percent="80">
+                  <span class="skillbar-title" style="background: #2980b9;">MySQL</span>
+                  <p class="skillbar-bar" style="background: #3498db;"></p>
+                  <span class="skill-bar-percent"></span>
+                </div>
+                <div class="skillbar" data-percent="70">
+                  <span class="skillbar-title" style="background: #27a32d;">Python</span>
+                  <p class="skillbar-bar" style="background: #3cd15d;"></p>
+                  <span class="skill-bar-percent"></span>
+                </div>
+                <div class="skillbar" data-percent="60">
+                  <span class="skillbar-title" style="background: #46465e;">Swift</span>
+                  <p class="skillbar-bar" style="background: #5a68a5;"></p>
+                  <span class="skill-bar-percent"></span>
+                </div>
+                <div class="skillbar" data-percent="50">
+                  <span class="skillbar-title" style="background: #2c3e50;">Kotlin</span>
+                  <p class="skillbar-bar" style="background: #2c3e50;"></p>
+                  <span class="skill-bar-percent"></span>
+                </div>
+                
+              </div>
+              <div class="skill-bar-container">
+                <div class="text-center">
+                  Dev-ops
+                </div>
+                <div class="skillbar" data-percent="80">
+                  <span class="skillbar-title" style="background: #d35400;">AWS</span>
+                  <p class="skillbar-bar" style="background: #e67e22;"></p>
+                  <span class="skill-bar-percent"></span>
+                </div>
+                <div class="skillbar" data-percent="80">
+                  <span class="skillbar-title" style="background: #2980b9;">Git/GitHub</span>
+                  <p class="skillbar-bar" style="background: #3498db;"></p>
+                  <span class="skill-bar-percent"></span>
+                </div>
+                <div class="skillbar" data-percent="70">
+                  <span class="skillbar-title" style="background: #27a32d;">Linux</span>
+                  <p class="skillbar-bar" style="background: #3cd15d;"></p>
+                  <span class="skill-bar-percent"></span>
+                </div>
+                <div class="skillbar" data-percent="50">
+                  <span class="skillbar-title" style="background: #46465e;">Apache</span>
+                  <p class="skillbar-bar" style="background: #5a68a5;"></p>
+                  <span class="skill-bar-percent"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content-wrapper back-image" id="profile">
+        <div class="content-container">
+          <div class="w-80">
+            <div class="plofile-title text-center m-md text-16 bold">
+              PROFILE
+            </div>
+            <div class="plofile-memo max-width-default">
+              今まで歩んだ道のりをまとめました。お時間があれば一緒に振り返りましょう。
+            </div>
+            <div class="quotes">
+              <article>
+                <div class="line"></div>
+                <div class="display-flex justify-content-center">
+                  <div class="profile-age">
+                    1998年~<br>
+                    (誕生)
+                  </div>
+                  <div class="profile-content-container text-center">
+                    <img class="profile-img" src="/image/1998.jpeg">
+                    <div class="profile-text text-left">
+                      東京都目黒区で産声を上げました。<br>
+                      重い喘息を患っていましたが、水泳で克服しました。<br>
+                      将来の夢はお坊さんでした。
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article>
+                <div class="line"></div>
+                <div class="display-flex justify-content-center">
+                  <div class="profile-age">
+                    2011年~<br>
+                    (中学時代)
+                  </div>
+                  <div class="profile-content-container text-center">
+                    <img class="profile-img" src="/image/2011.jpeg">
+                    <div class="profile-text text-left">
+                      バスケットボール部で部長をしていました。
+                      部員5人の超弱小で1度も試合で勝てませんでした。
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article>
+                <div class="line"></div>
+                <div class="display-flex justify-content-center">
+                  <div class="profile-age">
+                    2014年~<br>
+                    (高校時代)
+                  </div>
+                  <div class="profile-content-container text-center">
+                    <img class="profile-img" src="/image/2014.jpeg">
+                    <div class="profile-text text-left">
+                      五反田のワタナベボクシングジムの練習生になりました。<br>
+                      高校3年生でプロテストに合格。
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article>
+                <div class="line"></div>
+                <div class="display-flex justify-content-center">
+                  <div class="profile-age">
+                    2017年~<br>
+                    (高校卒業後)
+                  </div>
+                  <div class="profile-content-container text-center">
+                    <img class="profile-img" src="/image/2017.jpeg">
+                    <div class="profile-text text-left">
+                      父の会社が倒産。<br>
+                      大学に通えずプロボクサーとして生きる事を決意。<br>
+                      同時に飛び込みの営業を業務委託で始めました。<br>
+                      営業が肌に合っていたのか、楽しく充実した毎日でした。
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article>
+                <div class="line"></div>
+                <div class="display-flex justify-content-center">
+                  <div class="profile-age">
+                    2018年秋~<br>
+                    (ボクサー時代)
+                  </div>
+                  <div class="profile-content-container text-center">
+                    <img class="profile-img" src="/image/2018-01.jpeg">
+                    <div class="profile-text text-left">
+                      東日本新人王トーナメントに出場。
+                      準決勝で敗れ、6戦5勝の戦績でプロボクシングを引退しました。<br>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article>
+                <div class="line"></div>
+                <div class="display-flex justify-content-center">
+                  <div class="profile-age">
+                    2018年冬~<br>
+                    (起業)
+                  </div>
+                  <div class="profile-content-container text-center">
+                    <img class="profile-img" src="/image/2018-02.jpeg">
+                    <div class="profile-text text-left">
+                      ボクシングを引退後、プロテインブランドを営業仲間と立ち上げました。<br>
+                      右も左も分からない状態で必死に働きました。
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article>
+                <div class="line"></div>
+                <div class="display-flex justify-content-center">
+                  <div class="profile-age">
+                    2020年~<br>
+                    (IT転職)
+                  </div>
+                  <div class="profile-content-container text-center">
+                    <img class="profile-img" src="/image/2020.jpeg">
+                    <div class="profile-text text-left">
+                      起業仲間との方向性の違いにより、会社が解体。<br>
+                      地道に続けていた独学のプログラミング技術を活かして現在就職中のITベンチャーに転職しました。
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content-wrapper" id="contact">
+        <div class="content-container">
+          <div class="w-80">
+            <div class="text-center m-md text-16 bold">
+              CONTACT
+            </div>
+            <div class="p-md">
+              最後までご覧頂きありがとうございました。<br>
+              このサイトを通して少しでも私の事を知って頂けたのなら嬉しいです。<br>
+              私やこのサイトの内容についてご質問やコメントがあれば、下記フォームをご利用ください。
+            </div>
+            <form name="contact-form" class="contact-form row">
+              <input type="hidden" name="subject" value="ポーロフォリオお問い合わせ">
+              <div class="form-field col x-50">
+                <input id="name" class="input-text js-input" type="text" name="name" required>
+                <label class="label" for="name">Name</label>
+                <div class="error-message" id="form-name-error"></div>
+              </div>
+              <div class="form-field col x-50">
+                <input id="email" class="input-text js-input" type="email" name="email" required>
+                <label class="label" for="email">E-mail</label>
+                <div class="error-message" id="form-email-error"></div>
+              </div>
+              <div class="form-field col x-100">
+                <textarea cols="50" rows="10" id="body" class="input-text js-input" name="body" required></textarea>
+                <label class="label" for="body">Message</label>
+                <div class="error-message" id="form-body-error"></div>
+              </div>
+              <div class="form-field col x-100 align-center" id="mail-send">
+                <button class="submit-btn" id="send-btn" type="button">SEND</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div id="modal-work-01">
+        <div class="modal-wrapper">
+          <i class="modal-close fa-solid fa-xmark" id="close-work-01"></i>
+          <div class="display-flex justify-content-center">
+            <div class="modal-work-content-wrapper m-sm">
+              <div class="modal-content-title text-center text-12"><span>
+                ゴルフ免許証アプリ
+              </span></div>
+              <div class="text-left mb-md">
+                ゴルフ好き専用のSNS WEB,iOS,Androidアプリケーションです。
+                自社アプリとして開発を行い、4人チームのPLを勤めていました。<br>
+                WEBアプリのフロント/バックエンド、DB設計、サーバー管理と全ての開発に携わり、プロジェクトを通じてDBやAPIの設計、PLとしてのメンバーマネージメントについて経験を積めました。<br>
+                また、iOSアプリに関しては1人で開発からリリースまで行いました。<br>
+                一部機能を作成する為にPythonでのスクレイピング、DBデータ操作のスクリプトも作成しました。
+              </div>
+              <div class="modal-content-sub-title text-center text-12"><span>
+                使用言語など
+              </span></div>
+              <div class="text-left">
+                ・HTML ・SCSS ・vue.js(Nuxt.js) ・PHP(cakephp) ・Python<br>
+                ・AWS(EC2,S3,CloudFront,RDS)<br>
+                ・Git ・GitHub<br>
+                ・MySQL
+              </div>
+            </div>
+            <div class="modal-work-image-wrapper m-sm">
+              <div id="modal-work-main-image">
+                <img class="modal-work-main-image w-100" src="/image/golfApp01.jpg" id="main-img-modal-work-01">
+              </div>
+              <div class="modal-work-sub-images display-flex justify-content-center" id="sub-img-modal-work-01">
+                <img class="modal-work-sub-image current w-26 m-sm" src="/image/golfApp01.jpg">
+                <img class="modal-work-sub-image w-26 m-sm" src="/image/golfApp02.PNG">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="modal-work-02">
+        <div class="modal-wrapper">
+          <i class="modal-close fa-solid fa-xmark" id="close-work-02"></i>
+          <div class="display-flex justify-content-center">
+            <div class="modal-work-content-wrapper m-sm">
+              <div class="modal-content-title text-center text-12"><span>
+                童謡こども歌コンクールアプリ
+              </span></div>
+              <div class="text-left mb-md">
+                動画の撮影、音声の録音、データの送信（応募）が可能なiOS,Androidアプリケーションです。<br>
+                Androidの開発をKotlinで行いました。応募機能をメインで開発し、KotlinでのAPI送信、XMLでのレイアウト作成の技術を身につけました。<br>
+              </div>
+              <div class="modal-content-sub-title text-center text-12"><span>
+                使用言語など
+              </span></div>
+              <div class="text-left">
+                ・Kotlin ・XML<br>
+                ・Git ・GitHub<br>
+                ・AndroidStudio
+              </div>
+            </div>
+            <div class="modal-work-image-wrapper m-sm">
+              <div id="modal-work-main-image">
+                <img class="modal-work-main-image w-100" src="image/doyoApp01.png" id="main-img-modal-work-02">
+              </div>
+              <div class="modal-work-sub-images display-flex justify-content-center" id="sub-img-modal-work-02">
+                <img class="modal-work-sub-image current w-26 m-sm" src="image/doyoApp01.png">
+                <img class="modal-work-sub-image w-26 m-sm" src="image/doyoApp02.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="modal-work-03">
+        <div class="modal-wrapper">
+          <i class="modal-close fa-solid fa-xmark" id="close-work-03"></i>
+          <div class="display-flex justify-content-center">
+            <div class="modal-work-content-wrapper m-sm">
+              <div class="modal-content-title text-center text-12"><span>
+                チャットサンプルアプリ
+              </span></div>
+              <div class="text-left mb-md">
+                翌月より始まる予定だったプロジェクトの事前検証の為、AWSリソースを使用したサーバーレスチャットサンプルアプリを作成しました。<br>
+                フロントエンドにはNuxt.jsをAmplifyライブラリを使用しました。<br>
+                サーバーサイドはAPIにGraphQLを使用する為AppSyncを、DBはDynamoDBを使用しました。<br>
+                また、チャットにアプセス制限を儲けるため、AWSのCognitoを使用しました。<br>
+                全て一からAWSリソースを構築した為、本プロジェクトを通じてAWSへの理解が深まりました。<br>
+              </div>
+              <div class="modal-content-sub-title text-center text-12"><span>
+                使用言語など
+              </span></div>
+              <div class="text-left en-word">
+                ・Nuxt.js ・HTML ・CSS ・GraphQL<br>
+                ・AWS (AppSync,Amplify,Cognito,DyanmoDB,SQS,Cloud9,Lambda)
+              </div>
+            </div>
+            <div class="modal-work-image-wrapper m-sm">
+              <div id="modal-work-main-image">
+                <img class="modal-work-main-image w-100" src="image/chatApp01.png" id="main-img-modal-work-03">
+              </div>
+              <div class="modal-work-sub-images display-flex justify-content-center" id="sub-img-modal-work-03">
+                <img class="modal-work-sub-image current w-26 m-sm" src="image/chatApp01.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="modal-work-04">
+        <div class="modal-wrapper">
+          <i class="modal-close fa-solid fa-xmark" id="close-work-04"></i>
+          <div class="display-flex justify-content-center">
+            <div class="modal-work-content-wrapper m-sm">
+              <div class="modal-content-title text-center text-12"><span>
+                ポートフォリオ
+              </span></div>
+              <div class="text-left mb-md">
+                現在ご覧になっているポートフォリオページです。<br>
+                UI部分を自分で考え作成する事が初めてだったので、なかなか苦戦しました。<br>
+                AWSのRoot53でドメインを取得し、S3を使用して表示させています。<br>
+                「連絡先」セクションのメールの送信にはAWSのLambdaにてPythonを使用して実装しました。<br>
+                ページを作成する中で様々な面白いjQuery,cssのライブラリと出会えました。<br>
+                また時間のある際にアップデートしていきたいと思います。
+              </div>
+              <div class="modal-content-sub-title text-center text-12"><span>
+                使用言語など
+              </span></div>
+              <div class="text-left">
+                ・・HTML ・CSS ・jQuery<br>
+                ・AWS (Root53,S3,Lambda)
+              </div>
+            </div>
+            <div class="modal-work-image-wrapper m-sm">
+              <div id="modal-work-main-image">
+                <img class="modal-work-main-image w-100" src="image/portfolioImg.png" id="main-img-modal-work-04">
+              </div>
+              <div class="modal-work-sub-images display-flex justify-content-center" id="sub-img-modal-work-04">
+                <img class="modal-work-sub-image current w-26 m-sm" src="image/portfolioImg.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="alert-wrapper">
+        <div class="alert-container">
+          <div id="alert-message"></div>
+          <button class="bg-green color-white bold" id="close-alert" type="button">閉じる</button>
+        </div>
+      </div>
+      <div class="loading-wrapper">
+        <div class="preloader loading">
+          <span class="slice"></span>
+          <span class="slice"></span>
+          <span class="slice"></span>
+          <span class="slice"></span>
+          <span class="slice"></span>
+          <span class="slice"></span>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
+<script>
+// $(document).ready(function(){
+//   console.log("読み込み開始")
+//   $('.loading-wrapper').show();
+//   $('body').css('overflow-y', 'hidden');
+//   setTimeout(function() {
+// 		$('.loading-wrapper').hide();
+//     $('body').css('overflow-y', 'auto');
+// 	}, 1000);
+// });
+// $(window).on('load', function (){
+//   console.log("読み込み終了")
+//   $('.loading-wrapper').hide();
+//   $('body').css('overflow-y', 'hidden');
+// });
+$(function() {
+  // スキルバーアニメーション
+  var skillBarFlg = false;
+  $(window).scroll(function (){
+    if (!skillBarFlg) {
+      $('#skill-set').each(function(){ 
+      var elemPos = $(this).offset().top-50;
+      var scroll = $(window).scrollTop();
+      var windowHeight = $(window).height();
+      if (scroll >= elemPos - windowHeight){
+        $('.skillbar').skillBars({
+          from: 0,
+          speed: 4000, 
+          interval: 100,
+          decimals: 0,
+        });
+        skillBarFlg = true;
+      }
+    });
+    }
+  });
+
+  //ハンバーガーメニュー表示
+  $(".openbtn1").click(function () {
+    $(this).toggleClass('active');
+    $("#g-nav").toggleClass('panelactive');
+  });
+  //ハンバーガーメニュー非表示
+  $("#g-nav a").click(function () {
+    $(".openbtn1").removeClass('active');
+    $("#g-nav").removeClass('panelactive');
+  });
+
+	//Woekモーダル表示
+  $('.work-content').on('click',function(){	
+    var modal = "#modal-" + $(this).attr('id')
+		$(modal).addClass('active');
+    $('body').css('overflow-y', 'hidden');
+		return false;
+	});
+
+	//モーダルを閉じる
+	$('.modal-close').on('click',function(){
+    var close = "#modal" + $(this).attr('id').slice(5);
+		$(close).removeClass('active');
+    $('body').css('overflow-y', 'auto');
+	});
+
+	//モーダルの外側をクリックしたらモーダルを閉じる
+	$(document).on('click',function(e) {
+		if(!$(e.target).closest('.modal-wrapper').length) {
+			$('#modal-work-01').removeClass('active');
+      $('#modal-work-02').removeClass('active');
+      $('#modal-work-03').removeClass('active');
+      $('#modal-work-04').removeClass('active');
+      $('body').css('overflow-y', 'auto');
+		}
+	});
+
+  //Workモーダル画像切り替え
+  $('.modal-work-sub-images img').on('click',function(){
+    //mainに切り替えるimgのsrc取得
+    var img = $(this).attr('src');
+    var parentId = $(this).parent().attr('id');
+    var mainImgId = "#main" + parentId.slice(3);
+    
+    //currentクラス付け替え
+    $('.modal-work-sub-images img').removeClass('current');
+    $(this).addClass('current');
+    //fadeOutできたらsrc変更してfadeIn
+    $(mainImgId).fadeOut(50, function() {
+      $(mainImgId).attr('src', img).on('load', function() {
+        $(this).fadeIn();
+      })
+    })
+  });
+
+  var $container = $( '.quotes' );
+  $container.foldscroll({
+      perspective: 900,
+      margin: '220px'
+  });
+
+  var $body = $('#body');
+  var lineHeight = parseInt($body.css('lineHeight'));
+  $body.on('input', function(e) {
+    var lines = ($(this).val() + '\n').match(/\n/g).length;
+    $(this).height(lineHeight * lines + 10);
+  });
+
+  $( '.js-input' ).keyup(function() {
+    if( $(this).val() ) {
+      $(this).addClass('not-empty');
+    } else {
+      $(this).removeClass('not-empty');
+    }
+  });
+
+  $(".input-text").bind("blur", function() {
+		checkForm();
+	});
+
+  ///// Eメールの送信処理
+  $('#send-btn').on('click',function(){
+    console.log("send mail")
+    if (checkForm()) {
+      return;
+    }
+    showLoading()
+    $('#send-btn').text('SENDING');
+
+    var data = $('form').serializeArray();
+    data = parseJson(data);
+    console.log(data)
+
+    $.ajax({
+      url:           'https://23vkl9lv1f.execute-api.ap-northeast-1.amazonaws.com/pro1/send',
+      type:          'post',
+      dataType:      'json',
+      contentType:   'application/json',
+      scriptCharset: 'utf-8',
+      data:          JSON.stringify(data)
+    })
+    .done(function(data) {
+      hideLoading()
+      showAlert("メッセージを送信しました。");
+      $("#name").val("");
+      $("#email").val("");
+      $("#body").val("");
+      $('#send-btn').text('SEND');
+    }).fail(function(XMLHttpRequest, textStatus, errorThrown) {
+      hideLoading()
+      showAlert("メッセージの送信に失敗しました。");
+      $('#send-btn').text('SEND');
+    })
+  });
+  var parseJson = function(data) {
+    var returnJson = {};
+    for (idx = 0; idx < data.length; idx++) {
+      returnJson[data[idx].name] = data[idx].value
+    }
+    return returnJson;
+  }
+
+  $('#close-alert').on('click',function(){
+    hideAlert();
+  });
+
+  function checkForm() {
+    $(".error-message p").remove();
+    var errorFlg = false;
+    if ($("#name").val() === "") {
+      $("#form-name-error").append("<p class=\"form-error-message\">※入力して下さい。</p>");
+      errorFlg = true;
+    }
+    if ($("#email").val() === "") {
+      $("#form-email-error").append("<p class=\"form-error-message\">※入力して下さい。</p>");
+      errorFlg = true;
+    }
+    if ($("#body").val() === "") {
+      $("#form-body-error").append("<p class=\"form-error-message\">※入力して下さい。</p>");
+      errorFlg = true;
+    }
+    return errorFlg
+  }
+
+  function showLoading() {
+    $('.loading-wrapper').show();
+    $('body').css('overflow-y', 'hidden');
+  }
+  function hideLoading() {
+    $('.loading-wrapper').hide();
+    $('body').css('overflow-y', 'auto');
+  }
+
+
+  function showAlert(message) {
+    $("#alert-message").append("<p>" + message + "</p>");
+    $('.alert-wrapper').show();
+    $('body').css('overflow-y', 'hidden');
+  }
+  function hideAlert() {
+    $("#alert-message p").remove();
+    $('.alert-wrapper').hide();
+    $('body').css('overflow-y', 'auto');
+  }
+});
+
+</script>

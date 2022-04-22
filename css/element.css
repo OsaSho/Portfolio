@@ -1,0 +1,39 @@
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  width: 100%;
+  height: 65px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  position:fixed;
+  opacity: 0.9;
+  z-index: 999;
+}
+
+main {
+  background-color: white;
+}
+
+body {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #4b4b4b;
+}
+
+img {
+  object-fit: contain;
+}
+
+button {
+  border: none;
+}

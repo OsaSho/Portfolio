@@ -1,0 +1,388 @@
+
+
+
+/* ---ヘッダー--- */
+.header-title {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.header-title a {
+  color: #4b4b4b;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
+.pc-nav {
+  margin: 0 0 0 auto;
+}
+
+.pc-nav-items {
+  padding-right: 30px;
+  display: flex;
+}
+
+.pc-nav-items li {
+  margin: 0 0 0 20px;
+  font-size: 1rem;
+}
+
+.pc-nav-items li a {
+  color: #4b4b4b;
+}
+
+#g-nav{
+  display: none;
+}
+
+@media screen and (max-width: 880px) {
+  .pc-nav {
+    display: none;
+  }
+  #g-nav{
+    display: block;
+    /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
+    position:fixed;
+    z-index: 999;
+    /*ナビのスタート位置と形状*/
+    top:0;
+    right: -120%;
+    width:100%;
+    height: 100vh;/*ナビの高さ*/
+    background:#fff;
+    /*動き*/
+    transition: all 0.6s;
+  }
+
+  /*アクティブクラスがついたら位置を0に*/
+  #g-nav.panelactive{
+    right: 0;
+  }
+
+  /*ナビゲーションの縦スクロール*/
+  #g-nav.panelactive #g-nav-list{
+    /*ナビの数が増えた場合縦スクロール*/
+    position: fixed;
+    z-index: 999; 
+    width: 100%;
+    height: 100vh;/*表示する高さ*/
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /*ナビゲーション*/
+  #g-nav ul {
+    /*ナビゲーション天地中央揃え*/
+    position: absolute;
+    z-index: 999;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    padding-inline-start: 0;
+    width: 80%;
+  }
+
+  /*リストのレイアウト設定*/
+  #g-nav li{
+    list-style: none;
+    text-align: center;
+  }
+
+  #g-nav li a{
+    color: #333;
+    text-decoration: none;
+    padding:10px;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+  }
+
+  /*========= ボタンのためのCSS ===============*/
+  .openbtn1{
+    position:fixed;
+    z-index: 9999;/*ボタンを最前面に*/
+    top:6px;
+    right: 10px;
+    cursor: pointer;
+    width: 50px;
+    height:50px;
+  }
+    
+  /*×に変化*/  
+  .openbtn1 span{
+    display: inline-block;
+    transition: all .4s;
+    position: absolute;
+    left: 14px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: #666;
+    width: 45%;
+  }
+
+  .openbtn1 span:nth-of-type(1) {
+    top:15px; 
+  }
+
+  .openbtn1 span:nth-of-type(2) {
+    top:23px;
+  }
+
+  .openbtn1 span:nth-of-type(3) {
+    top:31px;
+  }
+
+  .openbtn1.active span:nth-of-type(1) {
+    top: 18px;
+    left: 18px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 30%;
+  }
+
+  .openbtn1.active span:nth-of-type(2) {
+    opacity: 0;
+  }
+
+  .openbtn1.active span:nth-of-type(3){
+    top: 30px;
+    left: 18px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 30%;
+  }
+}
+/* ------ */
+
+
+.top-content-wrapper {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.top-title {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  color: white;
+}
+
+.top-content {
+  position: absolute;
+  top: 55%;
+  left: 30px;
+  color: white;
+}
+
+.top-image {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.about-me-img {
+  width: 20%;
+}
+
+.about-me-content {
+  width: 50%;
+}
+
+@media screen and (max-width: 600px) {
+  .about-me-img {
+    width: 50%;
+  }
+  
+  .about-me-content {
+    width: 80%;
+  }
+}
+
+.work-wrapper {
+  justify-content: space-between;
+}
+
+.work-content {
+  width: 27%;
+}
+
+.works-img {
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .work-wrapper {
+    justify-content: center;
+  }
+
+  .work-content {
+    width: 80%;
+  }
+}
+
+.skill-set-wrapper {
+  justify-content: space-between;
+}
+
+.skill-bar-container {
+  width: 47%;
+  margin: 0 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .skill-set-wrapper {
+    justify-content: center;
+  }
+
+  .skill-bar-container {
+    width: 80%;
+    margin: 10px 0;
+  }
+}
+
+.line {
+  border-left: 1px solid #000;
+  height:100%;
+  top: 0px;
+  left: 25%;
+  position: absolute;
+}
+
+.plofile-title {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+}
+
+.plofile-memo {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 0 40px;
+}
+
+.profile-age {
+  width: 20%;
+  margin: auto 0;
+}
+
+.profile-content-container {
+  width: 65%;
+  display: flex;
+  flex-wrap : wrap;
+}
+
+.profile-img {
+  width: 30%;
+  height: auto;
+  object-fit: contain;
+  margin-right: 20px;
+}
+
+.profile-text {
+  width: 64%;
+}
+
+@media screen and (max-width: 600px) {
+  .line {
+    border-left: 1px solid #000;
+    height:100%;
+    top: 0px;
+    left: 33%;
+    position: absolute;
+  }
+
+  .profile-age {
+    width: 30%;
+    margin: auto 0;
+  }
+  
+  .profile-content-container {
+    width: 60%;
+    display: flex;
+    flex-wrap : wrap;
+  }
+
+  .profile-img {
+    width: 80%;
+    height: auto;
+    object-fit: contain;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .profile-text {
+    width: 100%;
+  }
+}
+
+.form-error-message {
+  color: red;
+}
+
+.loading-wrapper {
+  display: none;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(85, 80, 78, 0.8);
+  position:fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+}
+
+.scroll {
+  display: inline-block;
+  position: absolute;
+  right: 40px;
+  bottom: 0;
+  z-index: 1000;
+  padding: 10px 10px 110px;
+  overflow: hidden;
+  color: #fff;
+  font-size: 14px;
+  font-family: 'Josefin Sans', sans-serif;
+  line-height: 1;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  writing-mode: vertical-lr;
+}
+.scroll::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  height: 100px;
+  background: #fff;
+  animation: sdl 2s cubic-bezier(1, 0, 0, 1) infinite;
+}
+
+@keyframes sdl {
+  0% {
+    transform: scale(1, 0);
+    transform-origin: 0 0;
+  }
+  50% {
+    transform: scale(1, 1);
+    transform-origin: 0 0;
+  }
+  50.1% {
+    transform: scale(1, 1);
+    transform-origin: 0 100%;
+  }
+  100% {
+    transform: scale(1, 0);
+    transform-origin: 0 100%;
+  }
+}
