@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 header {
@@ -10,7 +11,7 @@ header {
   align-items: center;
   position:fixed;
   opacity: 0.9;
-  z-index: 999;
+  z-index: 1000;
 }
 
 main {
@@ -19,6 +20,7 @@ main {
 
 body {
   margin: 0;
+  font-family: Helvetica , "游ゴシック", sans-serif;
 }
 
 ul {

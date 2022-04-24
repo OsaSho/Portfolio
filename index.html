@@ -1,11 +1,5 @@
 <!DOCTYPE html>
-<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
-    <meta property="og:url" content="http://portfolio-pro.s3-website-ap-northeast-1.amazonaws.com/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="ポートフォリオ" />
-    <meta property="og:description" content="長田庄一郎のポートフォリオページです。" />
-    <meta property="og:site_name" content="osadaPortfolio" />
-    <meta property="og:image" content="http://portfolio-pro.s3-website-ap-northeast-1.amazonaws.com/image/portfolioImg.png" />
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -22,6 +16,14 @@
     <link rel="stylesheet" href="css/foldScroll.css">
     <link rel="stylesheet" href="css/loading.css">
     <link rel="stylesheet" href="css/top.css">
+  </head>
+  <head prefix="og:http://ogp.me/ns#">
+    <meta property="og:title" content="ポートフォリオ" />
+    <meta property="og:description" content="長田庄一郎のポートフォリオページです。" />
+    <meta property="og:url" content="http://portfolio-pro.s3-website-ap-northeast-1.amazonaws.com/" />
+    <meta property="og:image" content="http://portfolio-pro.s3-website-ap-northeast-1.amazonaws.com/image/portfolioImg.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="osadaPortfolio" />
   </head>
   <body>
     <header>
@@ -125,7 +127,7 @@
                 高校3年生にプロボクサーライセンスを取得。プロボクサーの側、飛び込みの営業を行い生計を立てる。<br>
                 プロボクサー引退後は、プロテインブランドの起業を経験。<br>
                 その後独学でiOSアプリ開発を行い、その経験を生かし2020年にアプリケーション受託開発をメインとするITベンチャー会社にてプログラマーとしてのキャリアをスタート。<br>
-                フロント/バックエンド、DB,サーバーサイド、iOS,Androidと幅広く開発経験を積み、現在はフルスタックエンジニアとして活躍中。
+                フロント/バックエンド、DB,サーバーサイド、iOS,Androidと幅広く開発経験を積み、現在はフルスタックエンジニアとして就業中。
               </div>
             </div>
           </div>
@@ -136,6 +138,9 @@
           <div class="w-80">
             <div class="text-center m-md text-16 bold">
               WORKS
+            </div>
+            <div class="text-center">
+              これまでに手掛けた成果物を紹介します。
             </div>
             <div class="work-wrapper display-flex">
               <div class="work-content text-center m-md" id="work-01">
@@ -171,6 +176,13 @@
           <div class="w-80">
             <div class="text-center m-md text-16 bold">
               SKILL SET
+            </div>
+            <div class="mb-md">
+              これまで実務で身につけたスキルをグラフにしました。フロントエンドからバックエンドまで幅広く実務をこなし、スキルを積んできました。
+              その結果、担当外サイドメンバーとの連携がスムーズになり、開発スピードが上がりました。
+              また、PLとしてプロジェクトを任された際にはメンバーマネージメントに大きく役立ちました。
+              その分、器用貧乏感が否めず、専門性が低い事を意識しています。今後はバックエンド、サーバーサイドの開発に携わる機会を増やし、専門性を高めていきたいと考えています。
+
             </div>
             <div class="skill-set-wrapper display-flex">
               <div class="skill-bar-container">
@@ -537,7 +549,7 @@
               <div class="text-left mb-md">
                 現在ご覧になっているポートフォリオページです。<br>
                 UI部分を自分で考え作成する事が初めてだったので、なかなか苦戦しました。<br>
-                AWSのRoot53でドメインを取得し、S3を使用して表示させています。<br>
+                AWSのS3を使用して表示させています。<br>
                 「連絡先」セクションのメールの送信にはAWSのLambdaにてPythonを使用して実装しました。<br>
                 ページを作成する中で様々な面白いjQuery,cssのライブラリと出会えました。<br>
                 また時間のある際にアップデートしていきたいと思います。
@@ -547,7 +559,7 @@
               </span></div>
               <div class="text-left">
                 ・・HTML ・CSS ・jQuery<br>
-                ・AWS (Root53,S3,Lambda)
+                ・AWS (S3,Lambda)
               </div>
             </div>
             <div class="modal-work-image-wrapper m-sm">
